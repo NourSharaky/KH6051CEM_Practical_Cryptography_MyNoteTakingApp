@@ -44,7 +44,7 @@ Go to the project directory
 
 Activate Virtual Environment
 ```bash
-  ./NoteTaking/scripts/activate
+  .\NoteTaking\scripts\activate
 ```
 
 Install dependencies
