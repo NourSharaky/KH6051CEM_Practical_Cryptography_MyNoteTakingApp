@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Loginstyles.css') }}">
+    <title>Sign Up</title>
+</head>
+<body>
+    <!-- Sign Up Form -->
+    <form action="/signup" method="post">
+        <h3>MyNotesApp SignUp</h3>
+
+        <!-- Username Input -->
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required><br>
+        
+        <!-- Password Input -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <!-- Confirm Password Input -->
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Sign Up</button>
+
+        <!-- Error Message (if any) -->
+        {% if msg %}
+            <p class="error">{{ msg }}</p>
+        {% endif %}
+
+        <!-- Login Option -->
+        <span class="options">Already have an account? <a href="/login">Login Here</a></span>
+    </form>
+</body>
+</html>

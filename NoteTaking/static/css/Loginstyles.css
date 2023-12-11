@@ -1,0 +1,108 @@
+/* static/styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcffd8b;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+form {
+    position: relative;
+    width: 100%;
+    max-width: 40rem;
+    padding: 80px 40px 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+form h3 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* input type text */
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 15px 20px;
+    font-size: 22px;
+    color: black;
+    background-color: white;
+    margin-top: 5px;
+}
+
+form label {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 15px 20px;
+    font-size: 22px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.error{
+    color: #fc4e6e;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #FF758F;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: black;
+    outline: 1px solid #FF758F;
+}
+
+.options{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.options a{
+    color: #FF758F;
+}

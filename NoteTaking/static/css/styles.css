@@ -1,0 +1,239 @@
+*
+{
+    font-family: "Bahnscrift", sans-serif;
+    /* border: 1px solid black; */
+    transition: all 0.1s ease-in-out;
+}
+
+Body{
+    margin: 0;
+    background-color: #fffefe;
+}
+
+.topbar{
+    /* gradient background color grey to pink */
+    background: linear-gradient(45deg, rgba(76,68,75,1) 0%, rgba(255,117,143,1) 100%);
+    
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.userSection, .brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    fill:white;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.username{
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 10px;
+    color: white;
+}
+
+.logout{
+    fill:white;
+    width: 30px;
+    height: 30px;
+}
+
+.container{
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: row;   
+}
+
+.sidebar{
+    width:20%;
+    background: #4c444b;
+    box-shadow: 25px rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.searchBar {
+    margin-top: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.searchBar input{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: black;
+}
+
+.searchBar input:focus{
+    outline: none;
+}
+
+.searchBar a{
+    width: 20%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.addNoteBtn {
+    fill: #FF758F;
+    font-weight: bolder;
+    width: 100%;
+    height: 100%;
+}
+
+.searchBar a .addNoteBtn:hover{
+    fill: #494549;
+}
+
+.sidebar .NoteList{
+    width: 98%;
+    
+}
+.sidebar .NoteItem{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    
+}
+.sidebar .NoteItem a{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar .NoteItem:hover{
+    background-color: #FF758F;
+}
+
+.sidebar .NoteItem .delete{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.deleteBtn {
+    width: 100%;
+    height: 100%;
+    cursor:help;
+}
+
+.noteArea
+{
+    padding: 10px;
+    width: 80%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.noteArea .noteTitle{
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    align-content: center;
+    border-radius: 5px;
+    max-height: 3.5rem;
+    border: none;
+    border-bottom: 2px solid #FF758F;
+}
+
+.noteArea .noteTitle:focus{
+    outline: none;
+    border: 2px dashed #FF758F;
+}
+
+.noteContent{
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    resize: none;
+    background-color: rgb(254, 243, 250);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.noteContent:focus{
+    outline: none;
+    border: 2px dashed #494549;
+}
+
+.noteArea .saveBtn{
+    width: 100%;
+    height: 10%;
+    background-color: #FF758F;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.noteArea .saveBtn:hover{
+    background-color: #494549;
+}
+
+
+
